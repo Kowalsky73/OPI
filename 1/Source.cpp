@@ -9,7 +9,7 @@ int main()
 	float max, massiv[N];    //Описание массива
 	cout << "Введите 10 целых чисел\n";
 	for (i = 0; i < N; i++)
-		cin >> massiv[i];    //Ввод массива
+		cin >> massiv[i];    //Происходит ввод массива
 
 	max = massiv[0];
 
