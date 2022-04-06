@@ -6,7 +6,7 @@ int main()
 {
 	const int N = 10;
 	int i, k = 0;
-	float max, massiv[N];    //Описание массива
+	float max, massiv[N];    //Происходит описание массива
 	cout << "Введите 10 целых чисел\n";
 	for (i = 0; i < N; i++)
 		cin >> massiv[i];    //Происходит ввод массива
