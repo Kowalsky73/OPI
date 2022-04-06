@@ -13,9 +13,9 @@ int main()
 
 	max = massiv[0];
 
-	for (i = 0; i < N; i++)
+	for (i = 0; i < N; i++) //»щем максимальный элемент массива
 	{
-		if (abs(massiv[i]) > max)
+		if (abs(massiv[i]) > max) 
 			max = massiv[i];
 	}
 	cout << "\n  Max=" << max << '\n';
