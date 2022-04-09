@@ -2,5 +2,5 @@
 using namespace std;
 void Function()
 {
-	cout << "Hello, world";
+	cout << "Hello, world"; //גûגמה פנאחû 
 }
