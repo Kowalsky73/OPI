@@ -3,7 +3,7 @@
 #include <math.h> //Для abs
 using namespace std; //пространство имен std
 
-int main()
+int main() //главная функция main
 {
 	const int N = 10; //Количество элементов массива
 	int i, k = 0;
