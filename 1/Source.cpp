@@ -18,5 +18,5 @@ int main()
 		if (abs(massiv[i]) > max) 
 			max = massiv[i];
 	}
-	cout << "\n  Max=" << max << '\n';
+	cout << "\n  Max=" << max << '\n'; //Вывод максимального элемента массива
 }
