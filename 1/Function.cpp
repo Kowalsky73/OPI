@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-void Function()
+void Function() //функция вывода фразы на экран
 {
-	cout << "Hello, world"; //вывод фразы 
+	cout << "Hello, world"; //вывод фразы на экран
 }
