@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-	const int N = 10;
+	const int N = 10; //Количество элементов массива
 	int i, k = 0;
 	float max, massiv[N];    //Происходит описание массива
 	cout << "Введите 10 целых чисел\n";
