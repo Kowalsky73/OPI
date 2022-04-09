@@ -1,7 +1,7 @@
 //поиск максимального элемента массива
 #include <iostream>
 #include <math.h> //Для abs
-using namespace std;
+using namespace std; //пространство имен std
 
 int main()
 {
