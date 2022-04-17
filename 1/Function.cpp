@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> //для ввода и вывода
 using namespace std; //пространство имен std
 void Function() //функция вывода фразы на экран
 {
