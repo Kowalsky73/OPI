@@ -3,10 +3,18 @@
 #include <math.h> //Для abs
 using namespace std; //пространство имен std
 
+///Number of array elements and array element count
+const int N = 20;
+int i = 0;
+
+
+/*!
+* \brief Integer function main which searchs max element in the array 
+* \return int value which indicates that the program completed without errors
+* this value returns 0 when the program completed without errors or any integer value if the program completed with errors
+*/
 int main() //главная функция main
 {
-	const int N = 20; //Количество элементов массива
-	int i, k = 0;
 	float max, massiv[N];    //Происходит описание массива
 	cout << "Введите 10 целых чисел\n";
 	for (i = 0; i < N; i++)
