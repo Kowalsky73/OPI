@@ -37,10 +37,9 @@ jobs:
             run: echo All files exists!
             
             #lab 7 step 4
+          - uses: actions/checkout@v2
           - name: DoxygenDocumentationCreate
-            uses: 
-              actions/checkout@v2
-              mattnotmitt/doxygen-action@v1.9.3
+            uses: mattnotmitt/doxygen-action@v1.9.2
             with:
               doxyfile-path: './Doxyfile'
           - name: upload result
