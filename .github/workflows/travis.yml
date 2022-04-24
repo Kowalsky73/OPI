@@ -39,7 +39,7 @@ jobs:
             #lab 7 step 4
           - uses: actions/checkout@v2
           - name: DoxygenDocumentationCreate
-            uses: mattnotmitt/doxygen-action@v1.9.3
+            uses: mattnotmitt/doxygen-action@v1.9.2
             with:
               doxyfile-path: './Doxyfile'
           - name: upload result
@@ -49,6 +49,8 @@ jobs:
               name: Doxygen
           - name: Push to IO repository 
             uses: cpina/github-action-push-to-another-repository@v1.4.1
+            env: 
+              API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
             with: 
               source-directory: 'Doxygen_documentation'
               destination-github-username: 'Kowalsky73'
