@@ -44,14 +44,14 @@ jobs:
           - name: upload result
             uses: actions/upload-artifact@v2
             with:
-              path: Doxygen_documentation
+              path: dox_docum
               name: Doxygen
           - name: Push to IO repository 
             uses: cpina/github-action-push-to-another-repository@v1.4.1
             env: 
               API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
             with: 
-              source-directory: 'Doxygen_documentation'
+              source-directory: 'dox_docum'
               destination-github-username: 'Kowalsky73'
               destination-repository-name: 'new.io'
               user-email: '2020102970@pnu.edu.ru'
