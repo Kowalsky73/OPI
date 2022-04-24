@@ -15,11 +15,11 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-    my_first_job:
+   # my_first_job:
 
-        runs-on: ubuntu-latest
+     #   runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
-        steps:
+      #  steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
        #   - name: chekout
        #     uses: actions/checkout@v1
@@ -59,16 +59,18 @@ jobs:
               
               
           #lab8
+      job_compile:
+        runs-on: ubuntu-latest
+        steps:
           - uses: actions/checkout@v3
           - name: compile
             run: |
               sudo apt-get install g++-10
-              g++ -dumpversion
-              g++ source.cpp -o launch.exe
+              g++ source.cpp -o source.exe
               ls
             
           - name: Make exe
             uses: actions/upload-artifact@v2
             with:
-              name: Result
-              path: launch.exe
+              name: result
+              path: source.exe
