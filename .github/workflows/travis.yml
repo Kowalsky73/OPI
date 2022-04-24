@@ -54,7 +54,5 @@ jobs:
               source-directory: 'Doxygen_documentation'
               destination-github-username: 'Kowalsky73'
               destination-repository-name: 'new.io'
-              tаrget-branch: main
               user-email: '2020102970@pnu.edu.ru'
               commit-message: 'Doxygen documentation'
-
