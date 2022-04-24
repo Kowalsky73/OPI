@@ -38,7 +38,7 @@ jobs:
             #lab 7 step 4
           - uses: actions/checkout@v2
           - name: DoxygenDocumentationCreate
-            uses: mattnotmitt/doxygen-action@v1.9.2
+            uses: mattnotmitt/doxygen-action@v1.9.3
             with:
               doxyfile-path: './Doxyfile'
           - name: upload result
