@@ -56,3 +56,17 @@ jobs:
               destination-repository-name: 'new.io'
               user-email: '2020102970@pnu.edu.ru'
               commit-message: 'Doxygen documentation'
+              
+              
+          #lab8
+          - name: compile 
+            run: |
+              sudo apt-get install g++-10
+              g++ Source.cpp -o launch.exe
+              ls
+            
+          - name: Make exe
+            uses: actions/upload-artifact@v2
+            with:
+              name: Result
+              path: launch.exe
