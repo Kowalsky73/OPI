@@ -35,3 +35,36 @@ jobs:
             if: steps.check_files.outputs.files_exists == 'true'
             # Only runs if all of the files exists
             run: echo All files exists!
+            
+            #lab 7 step 4
+          - name: DoxygenDocumentationCreate
+            uses: 
+              actions/checkout@v2
+              mattnotmitt/doxygen-action@v1.9.3
+            with:
+              doxyfile-path: './Doxyfile'
+          - name: upload result
+            uses: actions/upload-artifact@v2
+            with:
+              path: Doxygen_documentation
+              name: Doxygen
+          - name: Push to IO repository 
+            uses: cpina/github-action-push-to-another-repository@v1.4.1
+            with: 
+              source-directory: 'Doxygen_documentation'
+              destination-github-username: 'Kowalsky73'
+              destination-repository-name: 'new.io'
+              tаrget-branch: main
+              user-email: '2020102970@pnu.edu.ru'
+              commit-message: 'Doxygen documentation'
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
