@@ -62,6 +62,7 @@ jobs:
           - name: compile 
             run: |
               sudo apt-get install g++-10
+              g++ -dumpversion
               g++ Source.cpp -o launch.exe
               ls
             
